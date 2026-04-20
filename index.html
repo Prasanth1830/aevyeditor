@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AevyTV Video Editing Cohort — Zero to Pro in 3 Months</title>
+    <meta name="description" content="The best placement-friendly video editing cohort money can buy. 4500+ Students Enrolled, 80% Average Placement Rate. Join now.">
+    <meta property="og:title" content="AevyTV Video Editing Cohort">
+    <meta property="og:description" content="The best placement-friendly video editing cohort money can buy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Space Canvas Background -->
+    <canvas id="spaceCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-aevy">Aevy</span><span class="logo-tv">TV</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About us</a>
+                <a href="#cohort" class="nav-link">Structure</a>
+                <a href="https://www.youtube.com/aevytv" target="_blank" class="nav-link">Youtube</a>
+                <a href="#footer" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://events.aevytv.com/w?utm_source=website_nav" class="btn-ghost" target="_blank">Free Masterclass</a>
+                <a href="https://events.aevytv.com/e/c13w15?utm_source=website" class="btn-primary" target="_blank">Apply Now</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About us</a>
+        <a href="#cohort" class="mobile-link">Structure</a>
+        <a href="https://www.youtube.com/aevytv" target="_blank" class="mobile-link">Youtube</a>
+        <a href="#footer" class="mobile-link">Contact</a>
+        <a href="https://events.aevytv.com/w?utm_source=website_nav" class="mobile-link highlight" target="_blank">Free Masterclass</a>
+        <a href="https://events.aevytv.com/e/c13w15?utm_source=website" class="mobile-link cta" target="_blank">Apply Now</a>
+    </div>
+
+    <!-- SECTION 1: Hero — Stripe-inspired -->
+    <section class="hero" id="home">
+        <div class="hero-gradient-orb hero-orb-1"></div>
+        <div class="hero-gradient-orb hero-orb-2"></div>
+        <div class="hero-gradient-orb hero-orb-3"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">
+                <span class="eyebrow-dot"></span>
+                Go from Zero to Pro in just 3 months
+            </p>
+            <h1 class="hero-title">
+                The Best <span class="gradient-text">Placement Friendly</span> Video
+                <span class="gradient-text-alt">Mastery Cohort</span> money can buy.
+            </h1>
+            <p class="hero-subtitle">
+                4500+ Students Enrolled, 80% Average Placement Rate*
+            </p>
+            <div class="hero-cta-group">
+                <a href="https://events.aevytv.com/w?utm_source=website" class="btn-hero" target="_blank">
+                    Join Free Masterclass
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#cohort" class="btn-hero-outline">
+                    Explore Structure
+                </a>
+            </div>
+            <p class="hero-disclaimer">
+                *Of those who opted for placements and completed their portfolios, 80% were successfully placed across last 3 cohorts
+            </p>
+        </div>
+        <!-- Animated gradient mesh -->
+        <div class="hero-mesh"></div>
+    </section>
+
+    <!-- SECTION 2: Companies Hiring — Scrolling logos -->
+    <section class="companies-section" id="companies">
+        <div class="section-container">
+            <p class="companies-eyebrow">See who's hiring video editors</p>
+            <h2 class="companies-title">Ok, but where's the <span class="gradient-text">demand?</span></h2>
+            <p class="companies-subtitle">500+ top companies are hiring video editors from Aevy Cohorts</p>
+        </div>
+        <div class="logo-marquee">
+            <div class="logo-track">
+                <div class="logo-item">Finance With Sharan</div>
+                <div class="logo-item">Revolio</div>
+                <div class="logo-item">Ali Abdaal</div>
+                <div class="logo-item">10K Designers</div>
+                <div class="logo-item">Growth X</div>
+                <div class="logo-item">House of X</div>
+                <div class="logo-item">India Hemp Organics</div>
+                <div class="logo-item">High Income Tribe</div>
+                <div class="logo-item">Overpowered</div>
+                <div class="logo-item">NKsquared</div>
+                <div class="logo-item">Bilawal</div>
+                <div class="logo-item">GrowthSchool</div>
+                <!-- Duplicate for seamless loop -->
+                <div class="logo-item">Finance With Sharan</div>
+                <div class="logo-item">Revolio</div>
+                <div class="logo-item">Ali Abdaal</div>
+                <div class="logo-item">10K Designers</div>
+                <div class="logo-item">Growth X</div>
+                <div class="logo-item">House of X</div>
+                <div class="logo-item">India Hemp Organics</div>
+                <div class="logo-item">High Income Tribe</div>
+                <div class="logo-item">Overpowered</div>
+                <div class="logo-item">NKsquared</div>
+                <div class="logo-item">Bilawal</div>
+                <div class="logo-item">GrowthSchool</div>
+            </div>
+        </div>
+        <div class="logo-marquee reverse">
+            <div class="logo-track">
+                <div class="logo-item">Ranveer Allahbadia</div>
+                <div class="logo-item">BeerBiceps</div>
+                <div class="logo-item">Ankur Warikoo</div>
+                <div class="logo-item">Figuring Out</div>
+                <div class="logo-item">Josh Talks</div>
+                <div class="logo-item">Think School</div>
+                <div class="logo-item">Nas Daily</div>
+                <div class="logo-item">Dhruv Rathee</div>
+                <div class="logo-item">Tanmay Bhat</div>
+                <div class="logo-item">Raj Shamani</div>
+                <div class="logo-item">Flying Beast</div>
+                <div class="logo-item">CarryMinati</div>
+                <!-- Duplicate -->
+                <div class="logo-item">Ranveer Allahbadia</div>
+                <div class="logo-item">BeerBiceps</div>
+                <div class="logo-item">Ankur Warikoo</div>
+                <div class="logo-item">Figuring Out</div>
+                <div class="logo-item">Josh Talks</div>
+                <div class="logo-item">Think School</div>
+                <div class="logo-item">Nas Daily</div>
+                <div class="logo-item">Dhruv Rathee</div>
+                <div class="logo-item">Tanmay Bhat</div>
+                <div class="logo-item">Raj Shamani</div>
+                <div class="logo-item">Flying Beast</div>
+                <div class="logo-item">CarryMinati</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Working with biggest creators — Space BG -->
+    <section class="creators-section" id="creators">
+        <div class="creators-bg">
+            <canvas id="creatorsCanvas"></canvas>
+        </div>
+        <div class="section-container">
+            <p class="section-eyebrow">all your faves need a video editor</p>
+            <h2 class="section-title-light">Our students are now working with the <span class="gradient-text">biggest creators</span></h2>
+            <p class="section-subtitle-light">and many more are hiring from the next cohort.</p>
+            <div class="creators-grid">
+                <div class="creator-card" data-delay="0">
+                    <div class="creator-card-glow"></div>
+                    <div class="creator-avatar">YG</div>
+                    <h3>Yuvraj Garg</h3>
+                    <p>Video Editor at Revolio</p>
+                </div>
+                <div class="creator-card" data-delay="100">
+                    <div class="creator-card-glow"></div>
+                    <div class="creator-avatar">ZG</div>
+                    <h3>Zanish Gajra</h3>
+                    <p>Video Editor at Bilawal</p>
+                </div>
+                <div class="creator-card" data-delay="200">
+                    <div class="creator-card-glow"></div>
+                    <div class="creator-avatar">A</div>
+                    <h3>Asif</h3>
+                    <p>Video Editor at Overpowered</p>
+                </div>
+                <div class="creator-card" data-delay="300">
+                    <div class="creator-card-glow"></div>
+                    <div class="creator-avatar">VK</div>
+                    <h3>Vivek Kamath</h3>
+                    <p>Video Editor at NKsquared Investments</p>
+                </div>
+                <div class="creator-card" data-delay="400">
+                    <div class="creator-card-glow"></div>
+                    <div class="creator-avatar">DS</div>
+                    <h3>Devansh Shukla</h3>
+                    <p>Video Editor at Growth X</p>
+                </div>
+                <div class="creator-card" data-delay="500">
+                    <div class="creator-card-glow"></div>
+                    <div class="creator-avatar">IM</div>
+                    <h3>Ishir Mehta</h3>
+                    <p>Video Editor at House of X</p>
+                </div>
+                <div class="creator-card" data-delay="600">
+                    <div class="creator-card-glow"></div>
+                    <div class="creator-avatar">RT</div>
+                    <h3>Rohit Tarale</h3>
+                    <p>Chief Editor at Finance With Sharan</p>
+                </div>
+                <div class="creator-card" data-delay="700">
+                    <div class="creator-card-glow"></div>
+                    <div class="creator-avatar">AP</div>
+                    <h3>Ayush Pandey</h3>
+                    <p>Video Editor at Ali Abdaal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Recruiter Stories — Card design -->
+    <section class="recruiters-section" id="recruiters">
+        <div class="section-container">
+            <p class="section-eyebrow-dark">Recruiter Stories</p>
+            <h2 class="section-title-dark">Here's what our <span class="gradient-text">Recruiters</span> have to say</h2>
+            <div class="recruiter-cards">
+                <div class="recruiter-card">
+                    <div class="recruiter-card-visual" style="--card-hue: 270;">
+                        <div class="card-pattern"></div>
+                        <div class="recruiter-initials">SH</div>
+                    </div>
+                    <div class="recruiter-info">
+                        <h3>Sharan Hegde</h3>
+                        <p>Finance With Sharan</p>
+                        <a href="#" class="recruiter-link">Read Sharan's story →</a>
+                    </div>
+                </div>
+                <div class="recruiter-card">
+                    <div class="recruiter-card-visual" style="--card-hue: 180;">
+                        <div class="card-pattern"></div>
+                        <div class="recruiter-initials">RK</div>
+                    </div>
+                    <div class="recruiter-info">
+                        <h3>Rohit Kamath</h3>
+                        <p>Founder of India Hemp Organics</p>
+                        <a href="#" class="recruiter-link">Read Rohit's story →</a>
+                    </div>
+                </div>
+                <div class="recruiter-card">
+                    <div class="recruiter-card-visual" style="--card-hue: 140;">
+                        <div class="card-pattern"></div>
+                        <div class="recruiter-initials">SR</div>
+                    </div>
+                    <div class="recruiter-info">
+                        <h3>Swaroop Rao</h3>
+                        <p>High Income Tribe</p>
+                        <a href="#" class="recruiter-link">Read Swaroop's story →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Impact Stats — Animated lines background -->
+    <section class="impact-section" id="impact">
+        <canvas id="impactCanvas"></canvas>
+        <div class="section-container">
+            <p class="section-eyebrow-light">Changing lives one video at a time</p>
+            <h2 class="section-title-light">The impact we've <span class="gradient-text">created</span></h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-number" data-target="8" data-suffix=" Cr">0</div>
+                    <p class="impact-label">Impact on GDI</p>
+                    <p class="impact-desc">We are creating a huge impact on India's GDI — Gross Domestic Income. Students from our 4 cohorts are earning a total sum of 8 Crore in salaries annually.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number" data-target="3000" data-suffix="%">0</div>
+                    <p class="impact-label">ROI</p>
+                    <p class="impact-desc">Cohort has almost 30x Return on Investment. A few students have been placed with CTCs up to 8L Per annum with an average salary of 40,000 Per month.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number" data-target="4500" data-suffix="+">0</div>
+                    <p class="impact-label">Students Enrolled</p>
+                    <p class="impact-desc">Thousands of students have trusted AevyTV to transform their careers in video editing and content creation.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-number" data-target="80" data-suffix="%">0</div>
+                    <p class="impact-label">Placement Rate</p>
+                    <p class="impact-desc">An average of 80% students who opted for placements from Cohort 1,2 & 3 got jobs with some of the biggest Indian creators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Why We Do This -->
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <p class="section-eyebrow-dark">Future of content is video</p>
+            <h2 class="section-title-dark">Why are we <span class="gradient-text">doing this?</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>We are a group of visual storytellers who came together with one goal in mind — create the Best Videos the internet has ever seen. Children of digital age — we live and breathe YouTube and have built one of India's fastest growing infotainment Youtube channels — AevyTV.</p>
+                    <p>Along the journey we realized that there are many creators like us who want to create top notch content but don't have the right resources or mentors to guide them — <strong>The state of video education is broken.</strong></p>
+                    <p>That's why we decided to build an ecosystem where you get access to the top video creators and editors and also get to learn the whole process of video content creation end to end.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎬</div>
+                        <span>Storyboarding</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">✂️</div>
+                        <span>Editing</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎧</div>
+                        <span>Sound Design</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">📊</div>
+                        <span>Analytics</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🤖</div>
+                        <span>AI Tools</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎯</div>
+                        <span>Performance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: Cohort Structure / Steps -->
+    <section class="steps-section" id="cohort">
+        <div class="section-container">
+            <p class="section-eyebrow-dark">A Glimpse Into Your Journey</p>
+            <h2 class="section-title-dark">Your path to becoming a <span class="gradient-text">Video Ninja</span></h2>
+            <div class="steps-timeline">
+                <div class="timeline-line"></div>
+                <div class="step-item" data-step="1">
+                    <div class="step-marker">
+                        <span>01</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Learn the Fundamentals</h3>
+                        <p>Our course starts with the basics of video editing, covering everything from the software and tools you'll need to the basic techniques you'll use.</p>
+                    </div>
+                </div>
+                <div class="step-item" data-step="2">
+                    <div class="step-marker">
+                        <span>02</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Master Advanced Tools & Techniques</h3>
+                        <p>Move beyond the basics and dive into advanced video editing techniques, animations, narrative building, sound design, that will make your content stand out.</p>
+                    </div>
+                </div>
+                <div class="step-item" data-step="3">
+                    <div class="step-marker">
+                        <span>03</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Become a Youtube Ninja</h3>
+                        <p>Learn about YouTube analytics in-depth, key metrics to track and how to analyze them to achieve long term success with YouTube.</p>
+                    </div>
+                </div>
+                <div class="step-item" data-step="4">
+                    <div class="step-marker">
+                        <span>04</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Build a Strong Network</h3>
+                        <p>Connect with other editors, creators, youtubers, mentors and build a network of professionals who can help you grow and succeed.</p>
+                    </div>
+                </div>
+                <div class="step-item" data-step="5">
+                    <div class="step-marker">
+                        <span>05</span>
+                    </div>
+                    <div class="step-content">
+                        <h3>Launch Your Career</h3>
+                        <p>Once you've mastered the art of video, we train you for the real world and help you with interview prep, salary negotiations and help you land your dream job through our placement support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: Why Choose Us -->
+    <section class="why-section">
+        <div class="section-container">
+            <p class="section-eyebrow-dark">What makes us unique</p>
+            <h2 class="section-title-dark">Yes, but why should you <span class="gradient-text">choose us?</span></h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="url(#grad1)" stroke-width="1.5"><defs><linearGradient id="grad1"><stop offset="0%" stop-color="#635bff"/><stop offset="100%" stop-color="#a960ee"/></linearGradient></defs><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Amazing Community</h3>
+                    <p>Unlike all the other last-gen video editing courses out there, we give a community first learning experience. Not only do you learn, you make awesome life-long friends too.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="url(#grad1)" stroke-width="1.5"><path d="M20 7h-9M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+                    </div>
+                    <h3>Never Seen Before Placements</h3>
+                    <p>Our placement rates surpass the placements of top tier Indian institutions. You focus on becoming a top editor, and we will focus on getting you a job with the best creators and companies.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-card-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="url(#grad1)" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>Network of Top Indian Creators</h3>
+                    <p>We have a network of the top creators across the globe who are looking to hire from the next cohort. With Aevy, you get access and a chance to work with all the biggest names in the industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: CTA / Enroll -->
+    <section class="cta-section">
+        <div class="cta-glow"></div>
+        <div class="section-container">
+            <p class="section-eyebrow-light">What's your investment</p>
+            <h2 class="section-title-light">Become a Video Creation <span class="gradient-text">Ninja</span></h2>
+            <p class="cta-subtitle">Join the cohort that's transforming careers in video editing. Limited seats available.</p>
+            <div class="cta-buttons">
+                <a href="https://events.aevytv.com/e/c13w15?utm_source=website" class="btn-hero" target="_blank">
+                    Enroll Now
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="https://events.aevytv.com/w?utm_source=website" class="btn-hero-outline-light" target="_blank">
+                    Join Free Masterclass
+                </a>
+            </div>
+            <p class="cta-note">We also offer Interest Free EMI • No Cost EMIs available on Razorpay</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-aevy">Aevy</span><span class="logo-tv">TV</span>
+                    </a>
+                    <p class="footer-tagline">The best placement-friendly video editing cohort money can buy.</p>
+                    <div class="footer-contact">
+                        <a href="tel:+919582504161">+91 95825 04161</a>
+                        <a href="mailto:info@aevytv.com">info@aevytv.com</a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#cohort">Structure</a>
+                    <a href="https://www.youtube.com/aevytv" target="_blank">Youtube Channel</a>
+                    <a href="https://aevytv.com/hire-from-us" target="_blank">Hire from Us</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Legal</h4>
+                    <a href="https://aevytv.com/privacy-policy" target="_blank">Privacy Policy</a>
+                    <a href="https://aevytv.com/customer-support" target="_blank">Customer Support</a>
+                    <a href="https://aevytv.com/terms-of-service" target="_blank">Terms of Service</a>
+                    <a href="https://aevytv.com/course-cancellation-and-refund-policy" target="_blank">Refund Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Copyright 2026 Aevy Ventures Private Limited</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
